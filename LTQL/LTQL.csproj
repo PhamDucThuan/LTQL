@@ -144,6 +144,10 @@
     <Compile Include="Migrations\202109100643257_create_tale_Person.designer.cs">
       <DependentUpon>202109100643257_create_tale_Person.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109100804070_Altr_Column_Student.cs" />
+    <Compile Include="Migrations\202109100804070_Altr_Column_Student.Designer.cs">
+      <DependentUpon>202109100804070_Altr_Column_Student.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LamTrinhQuanLyDBContext.cs" />
     <Compile Include="Models\Person.cs" />
@@ -220,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109100643257_create_tale_Person.resx">
       <DependentUpon>202109100643257_create_tale_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109100804070_Altr_Column_Student.resx">
+      <DependentUpon>202109100804070_Altr_Column_Student.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
