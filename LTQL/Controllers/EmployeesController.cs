@@ -14,10 +14,13 @@ namespace LTQL.Controllers
     {
         private LamTrinhQuanLyDBContext db = new LamTrinhQuanLyDBContext();
         AutoGenerateKey aukey = new AutoGenerateKey();
+
         // GET: Employees
         public ActionResult Index()
         {
-            //var perID = db.Persons.OrderByDescending
+            var perID = db.Persons.OrderByDescending(m => m.PersonID).FirstOrDefault().PersonID;
+            var newID = aukey.GenerateKey(perID);
+            ViewBag.newPerID = newID;
             return View(db.Employees.ToList());
         }
 
