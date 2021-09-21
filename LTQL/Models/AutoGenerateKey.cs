@@ -1,22 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace LTQL.Models
 {
     public class AutoGenerateKey
     {
+        
         public string GenerateKey(string id)
         {
             string strkey = "";
-            //kiem tra gia tri id truyen vao gia tri l rong hay khong
-            //new id khong null
-            //tach rieng phan so va phan chu cua tham so id 
-            //giu nguyen phan chu
-            //phan so chuyen sang so nguyen va tang them 1 don vi
-            //ghep phan so  voi phan chu de duoc ma tu sinh
-            //tra ve ma sau khi tu sinh
+            
+            string numPart="", strPart="", strPhanSo="";
+            //tach phan so: 001
+            numPart = Regex.Match(id, @"\d+").Value;
+            //them ca so o de kich thuoc = phan so => 1+1 = 2
+            int phanso = (Convert.ToInt32(numPart) + 1);
+            for (int i = 0; i < numPart.Length-phanso.ToString().Length; i++)
+            {
+                strPhanSo += "0";
+            }
+            strPhanSo += phanso;
+            //tach phan chu
+            strkey = strPart + strPhanSo;
             return strkey;
         }
     }
