@@ -24,7 +24,7 @@ namespace LTQL.Controllers
             if (countStudent == 0)
             {
                 //trong turong hopj student chua co du lieu thi de khoa chinh mac dinh la STD001
-                stdID = "PERS001";
+                stdID = "PE1RS001";
             }
             else
             {
