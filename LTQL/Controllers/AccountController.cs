@@ -9,12 +9,14 @@ using System.Web.Mvc;
 using System.Web.Security;
 using LTQL.Models;
 
-namespace CKEditor.Controllers
+namespace LTQL.Controllers
 {
     public class AccountsController : Controller
     {
         Encrytion encry = new Encrytion();
-        test04052021Entities1 db = new test04052021Entities1();
+        private LamTrinhQuanLyDBContext db = new LamTrinhQuanLyDBContext();
+
+
 
 
 

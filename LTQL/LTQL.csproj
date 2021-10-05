@@ -134,7 +134,6 @@
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\StdNewController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
-    <Compile Include="Controllers\test04052021Entities1.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
