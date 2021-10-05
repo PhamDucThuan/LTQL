@@ -17,6 +17,7 @@ namespace LTQL.Models
         public DbSet<Person> Persons { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<Role> Roles { get; set; }
     }
 }
 //DESKTOP-PN40B58\SQLEXPRESS
