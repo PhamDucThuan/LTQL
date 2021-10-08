@@ -158,13 +158,11 @@
       <DependentUpon>202109140630108_crate_table_employee.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AutoGenerateKey.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Encrytion.cs" />
     <Compile Include="Models\LamTrinhQuanLyDBContext.cs" />
     <Compile Include="Models\Person.cs" />
-    <Compile Include="Models\Role.cs" />
     <Compile Include="Models\SinhVien.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\UsersRoleProvider.cs" />
@@ -574,6 +572,8 @@
     <Content Include="Views\People\Details.cshtml" />
     <Content Include="Views\People\Edit.cshtml" />
     <Content Include="Views\People\Index.cshtml" />
+    <Content Include="Views\Accounts\Register.cshtml" />
+    <Content Include="Views\Accounts\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

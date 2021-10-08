@@ -15,9 +15,7 @@ namespace LTQL.Models
         public DbSet<Student>  Students{ get; set; }
         public DbSet<SinhVien> SinhViens { get; set; }
         public DbSet<Person> Persons { get; set; }
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<Account> Accounts { get; set; }
-        public DbSet<Role> Roles { get; set; }
+        public DbSet<Employee> Employees { get; set; } 
     }
 }
 //DESKTOP-PN40B58\SQLEXPRESS

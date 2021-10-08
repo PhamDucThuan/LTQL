@@ -37,15 +37,16 @@ namespace LTQL.Models
 
         public override string[] GetRolesForUser(string username)
         {
-            using (LamTrinhQuanLyDBContext db = new LamTrinhQuanLyDBContext())
-            {
-                var userRoles = (from user in db.Accounts
-                                 join role in db.Roles
-                                 on user.RoleID equals role.RoleID
-                                 where user.UserName == username
-                                 select role.RoleID).ToArray();
-                return userRoles;
-            }
+            throw new NotImplementedException();
+            //using (LamTrinhQuanLyDBContext db = new LamTrinhQuanLyDBContext())
+            //{
+            //    var userRoles = (from user in db.Accounts
+            //                     join role in db.Roles
+            //                     on user.RoleID equals role.RoleID
+            //                     where user.UserName == username
+            //                     select role.RoleID).ToArray();
+            //    return userRoles;
+            //}
         }
 
         public override string[] GetUsersInRole(string roleName)
