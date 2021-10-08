@@ -10,9 +10,12 @@ namespace LTQL.Models
 
     public class Account
     {
+        [Key]
         [Required(ErrorMessage = "User name is required")]
         public string UserName { get; set; }
         [Required(ErrorMessage = "Password is required")]
         public string Password { get; set; }
+        [StringLength(10)]
+        public string RoleID { get; set; }
     }
 }
